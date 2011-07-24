@@ -6,10 +6,12 @@ Based on [an article](http://charliepark.org/slopegraphs/) by Charlie Park and K
 
 ## Usage
 
-    // Generate Slopegraph from the data in a <table>
+Generate Slopegraph from data in a \<table\>:
+
     graph = new SlopeGraph().fromTable($("#slopegraph table")).draw($("#slopegraph"))
 
-    // Generate Slopegraph from data passed in manually
+Generate Slopegraph from data passed in manually:
+
     opts = {width: 400, height: 200, min: 100, max: 120};
     container = $("#slopegraph");
     graph = new Slopegraph(opts);
