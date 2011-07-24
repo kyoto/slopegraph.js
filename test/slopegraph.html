@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slopegraph Test</title>
+  <link rel="stylesheet" href="slopegraph.css" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.1.7/underscore-min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/1.5.2/raphael-min.js"></script>
+  <script src="../slopegraph.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      // Generate graph from the data in a table and replace the table with the graph
+      new Slopegraph().fromTable($("#slopegraph table")).draw($("#slopegraph"));
+    });
+  </script>
+</head>
+
+<body>
+  <div class="graphWrap">
+    <h3>Auto-Generated</h3>
+    <div id="slopegraph">
+      <table id="slopegraph">
+        <thead>
+          <tr><th></th><th>1970</th><th>1979</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Belgium</td><td>35.2</td><td>43.2</td></tr>
+          <tr><td>Britain</td><td>40.7</td><td>39.0</td></tr>
+          <tr><td>Canada</td><td>35.2</td><td>35.8</td></tr>
+          <tr><td>Finland</td><td>34.9</td><td>38.2</td></tr>
+          <tr><td>France</td><td>39.0</td><td>43.4</td></tr>
+          <tr><td>Germany</td><td>37.5</td><td>42.9</td></tr>
+          <tr><td>Greece</td><td>26.8</td><td>30.6</td></tr>
+          <tr><td>Italy</td><td>30.4</td><td>35.7</td></tr>
+          <tr><td>Japan</td><td>20.7</td><td>26.6</td></tr>
+          <tr><td>Netherlands</td><td>44.0</td><td>55.8</td></tr>
+          <tr><td>Norway</td><td>43.5</td><td>52.2</td></tr>
+          <tr><td>Spain</td><td>22.5</td><td>27.1</td></tr>
+          <tr><td>Sweden</td><td>46.9</td><td>57.4</td></tr>
+          <tr><td>Switzerland</td><td>26.5</td><td>33.2</td></tr>
+          <tr><td>United States</td><td>30.3</td><td>32.5</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="graphWrap">
+    <h3>Static Image</h3>
+    <img src="slopegraph.gif" />
+  </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+body {
+  background-color: #ddd;
+  font-family: arial, sans-serif;
+}
+
+#slopegraph {
+  width: 480px;
+  height: 930px;
+}
+
+.graphWrap {
+  background-color: #fff;
+  border: 1px solid #555;
+  float: left;
+  margin: 20px;
+  text-align: center;
+}
