@@ -2,13 +2,13 @@
 
 JavaScript library for generating Slopegraphs.
 
-Based on [an article](http://charliepark.org/slopegraphs/) by Charlie Park and Kevin Mark's [JavaScript implementation](https://github.com/kevinmarks/slopegraph).
+Based on [an article](http://charliepark.org/slopegraphs/) by Charlie Park and Kevin Marks' [JavaScript implementation](https://github.com/kevinmarks/slopegraph).
 
 ## Usage
 
 Generate Slopegraph from data in a \<table\>:
 
-    graph = new SlopeGraph().fromTable($("#slopegraph table")).draw($("#slopegraph"))
+    graph = new SlopeGraph().fromTable($("#slopegraph table")).draw($("#slopegraph"));
 
 Generate Slopegraph from data passed in manually:
 
